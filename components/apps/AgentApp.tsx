@@ -44,7 +44,7 @@ export default function AgentApp() {
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-2 shrink-0" style={{ background: '#0d0d15', borderBottom: '1px solid #1e1e2e' }}>
         <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-        <span className="text-xs text-slate-400">AI Agent — powered by GPT-4o-mini + Tool Calling</span>
+        <span className="text-xs text-slate-400">AI Agent — powered by Gemini 2.0 Flash via OpenRouter + Tool Calling</span>
       </div>
 
       {/* Messages */}

@@ -5,7 +5,7 @@ const specs = [
   { label: 'RAM',       value: '∞ GB (Context Window Cache)' },
   { label: 'Storage',   value: '1 TB GitHub Repos + Vector DB' },
   { label: 'OS',        value: 'AgentOS 2.0 (AI-Powered)' },
-  { label: 'AI Model',  value: 'GPT-4o + Tool Calling' },
+  { label: 'AI Model',  value: 'Gemini 2.0 Flash via OpenRouter' },
   { label: 'Location',  value: 'Earth, Milky Way (remote)' },
   { label: 'Status',    value: '🟢 Available for hire' },
   { label: 'Agents',    value: '7 tools registered' },

@@ -1,8 +1,13 @@
-import { openai } from '@ai-sdk/openai';
+import { createOpenAI } from '@ai-sdk/openai';
 import { streamText, tool } from 'ai';
 import { z } from 'zod';
 
 export const maxDuration = 30;
+
+const openrouter = createOpenAI({
+  baseURL: 'https://openrouter.ai/api/v1',
+  apiKey: process.env.OPENROUTER_API_KEY,
+});
 
 const SYSTEM_PROMPT = `You are the AI agent living inside AgentOS, an interactive developer portfolio for Ken Lu.
 You are helpful, witty, and knowledgeable about Ken's work. You speak concisely.
@@ -27,7 +32,7 @@ export async function POST(req: Request) {
   const { messages } = await req.json();
 
   const result = streamText({
-    model: openai('gpt-4o-mini'),
+    model: openrouter('google/gemini-2.0-flash-001'),
     system: SYSTEM_PROMPT,
     messages,
     tools: {

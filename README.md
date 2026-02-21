@@ -17,7 +17,7 @@ This isn't just a portfolio — it's a working AI agent demo. The AI assistant l
 
 - **Next.js 15** (App Router)
 - **Vercel AI SDK** — streaming responses + tool calling
-- **OpenAI GPT-4o-mini** — the brain behind the agent
+- **OpenRouter + Gemini 2.0 Flash** — the brain behind the agent
 - **Framer Motion** — smooth animations
 - **Tailwind CSS v4** — styling
 - **TypeScript** — end to end
@@ -62,7 +62,7 @@ npm run dev
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `OPENAI_API_KEY` | Yes | OpenAI API key for the AI agent |
+| `OPENROUTER_API_KEY` | Yes | OpenRouter API key for the AI agent |
 | `GITHUB_USERNAME` | No | GitHub username for live data |
 | `GITHUB_TOKEN` | No | GitHub PAT (increases rate limit) |
 
